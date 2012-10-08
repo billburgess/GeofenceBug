@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationManagerController.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet UITextView *myTextView;
+@property (nonatomic, strong) IBOutlet UIButton *clearButton;
+
+-(IBAction)clearAction:(id)sender;
 
 @end
