@@ -26,6 +26,7 @@
 -(void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error;
 
 +(id)sharedManager;
++(void)clearLocationManagerController;
 
 @end
 

@@ -21,8 +21,8 @@
     [self.window makeKeyAndVisible];
     
     // initialize our location controller on startup so we can listen for location updates
-    LocationManagerController *locationController = [LocationManagerController sharedManager];
-    locationController.delegate = self;
+    //LocationManagerController *locationController = [LocationManagerController sharedManager];
+    //locationController.delegate = self;
     
     return YES;
 }
@@ -39,8 +39,8 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     // make sure our location controller is initialized to listen for location changes in background
-    LocationManagerController *locationController = [LocationManagerController sharedManager];
-    locationController.delegate = self;
+    //LocationManagerController *locationController = [LocationManagerController sharedManager];
+    //locationController.delegate = self;
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

@@ -34,6 +34,10 @@
     return self;
 }
 
++(void)clearLocationManagerController {
+    static LocationManagerController *_sharedManager = nil;
+}
+
 -(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
     NSLog(@"didEnterRegion:");
     [[NSNotificationCenter defaultCenter] postNotificationName:@"GeofenceBugDidEnterRegion" object:nil userInfo:@{@"text" : @"didEnterRegion"}];
